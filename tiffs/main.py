@@ -29,7 +29,7 @@ class Tiffs:
             >>> with Tiffs('grayscale_slice0.tif', 'grayscale_slice1.tif', collate=np.min) as t:
             >>>     crop = t[100:200, 100:201]  # reads only crop region from disk
             >>> print(crop.shape)
-            (100, 101, 2)
+            (100, 101)
 
         Args:
             *filenames: File names.
